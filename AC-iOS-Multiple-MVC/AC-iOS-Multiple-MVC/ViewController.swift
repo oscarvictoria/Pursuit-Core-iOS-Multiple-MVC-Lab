@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         animals = ZooAnimal.zooAnimals
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("PrepareForSegue")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,16 +58,9 @@ extension ViewController: UITableViewDataSource {
         
         let zooAnimal = animals[indexPath.row]
         cell.configureCell(zooAnimal: zooAnimal)
-        
-        
-        
         return cell
         
     }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return animals.count
-    }
-    
+
    
 }

@@ -63,6 +63,7 @@
                                             <outlet property="imageA" destination="PF3-TS-Mai" id="3Nz-Xp-J9b"/>
                                             <outlet property="nameLabel" destination="9KU-uZ-Etf" id="fYy-65-htw"/>
                                             <outlet property="originLabel" destination="gOo-d0-lWX" id="0u4-o1-0G2"/>
+                                            <segue destination="Zku-UP-2IF" kind="show" id="l1q-tm-70Z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -85,6 +86,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Zoo Animals Detail View Controller-->
+        <scene sceneID="Vam-LU-REh">
+            <objects>
+                <viewController id="Zku-UP-2IF" customClass="ZooAnimalsDetailViewController" customModule="AC_iOS_Multiple_MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RC2-b1-GnW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qlj-YM-3uo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hfi-l3-xtZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQg-3H-ij2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SgC-UH-I3P">
