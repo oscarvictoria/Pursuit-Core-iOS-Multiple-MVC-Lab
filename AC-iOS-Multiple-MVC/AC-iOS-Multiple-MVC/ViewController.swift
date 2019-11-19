@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         animals = ZooAnimal.zooAnimals
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +48,22 @@ extension ViewController: UITableViewDataSource {
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "zooAnimalsCell", for: indexPath) as? ZooAnimalsCell else {
+            fatalError("Could not dequeue zooAnimalsCell")
+        }
+        
+        let zooAnimal = animals[indexPath.row]
+        cell.configureCell(zooAnimal: zooAnimal)
+        
+        
+        
+        return cell
+        
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return animals.count
+    }
+    
+   
 }

@@ -14,5 +14,13 @@ class ZooAnimalsCell: UITableViewCell {
 @IBOutlet weak var nameLabel: UILabel!
 @IBOutlet weak var originLabel: UILabel!
     
+    
 
+    
+    func configureCell(zooAnimal: ZooAnimal) {
+        imageA.image = UIImage(named: String(zooAnimal.imageNumber))
+        nameLabel.text = zooAnimal.name
+        originLabel.text = zooAnimal.origin
+    }
+    
 }
